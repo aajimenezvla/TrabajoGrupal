@@ -47,6 +47,12 @@
 /*CSS PARA FOOTER*/
 a{
     color: rgb(160, 160, 160);
+    text-decoration: none !important;
 }
+p{
+    padding-right: 7px;
+}
+
+
 
 /*CSS PARA FOOTER*/
