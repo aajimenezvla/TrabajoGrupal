@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 .btn-primary{
   background-color: #FF8B00 !important;
   border-color: black;
@@ -49,10 +50,11 @@
 
 /*CSS nav Bar*/
 /*CSS PARA FOOTER*/
-a{
-  color: #FF8B00;
-    text-decoration: none !important;
+a, h6{
+  color: #FF8B00 !important;
+  text-decoration: none !important;
 }
+
 p{
     padding-right: 7px;
 }
