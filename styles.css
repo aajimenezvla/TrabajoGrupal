@@ -8,6 +8,20 @@
   background-color: #FF8B00 !important;
   border-color: black;
 }
+.articulos {
+  padding: 20px !important;
+}
+.ListaDeProductos{
+  margin-top: 20px;
+}
+
+.recomendados{
+  padding: 30px;
+}
+
+.recomendados-text{
+  padding: 10px;
+}
 
 /*CSS nav Bar*/
 
