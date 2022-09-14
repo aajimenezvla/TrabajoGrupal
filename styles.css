@@ -4,17 +4,36 @@
     padding: 0;
 }
 
+.btn-primary{
+  background-color: #FF8B00 !important;
+  border-color: black;
+}
+.articulos {
+  padding: 20px !important;
+}
+.ListaDeProductos{
+  margin-top: 20px;
+}
+
+.recomendados{
+  padding: 30px;
+}
+
+.recomendados-text{
+  padding: 10px;
+}
+
 /*CSS nav Bar*/
 
 .btn-toggle {
     padding: .25rem .5rem;
     font-weight: 600;
-    color: rgba(0, 0, 0, .65);
+    color: #FF8B00;
     background-color: transparent;
   }
   .btn-toggle:hover,
   .btn-toggle:focus {
-    color: rgba(0, 0, 0, .85);
+    color: #FF8B00;
     background-color: #d2f4ea;
   }
   
@@ -27,7 +46,7 @@
   }
   
   .btn-toggle[aria-expanded="true"] {
-    color: rgba(0, 0, 0, .85);
+    color: #FF8B00;
   }
   .btn-toggle[aria-expanded="true"]::before {
     transform: rotate(90deg);
@@ -45,8 +64,15 @@
 
 /*CSS nav Bar*/
 /*CSS PARA FOOTER*/
-a{
-    color: rgb(160, 160, 160);
+a, h6{
+  color: #FF8B00 !important;
+  text-decoration: none !important;
 }
+
+p{
+    padding-right: 7px;
+}
+
+
 
 /*CSS PARA FOOTER*/
