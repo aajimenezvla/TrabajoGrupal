@@ -17,19 +17,9 @@ $(document).ready(function () {
                 items = data;
                 let html = '';
                 /**
-                 <div class="col mb-4">
-                        <div class="card">
-                          <img src="https://i.ibb.co/Mnfc7X7/pngegg.png" class="card-img-top" alt="..." />
-                          <div class="card-body">
-                            <h5 class="card-title">Gafas Ray-Ban Azules</h5>
-                            <p class="card-text">$20</p>
-                            <a href="#"><button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
-                              Comprar
-                            
-                          </div>
-                        </div>
-                </div>
-                });
+                    npm install
+                    npm run development
+
                  */
                 data.forEach((product, index) => {
                     html += '<div class="col mb-4">';
