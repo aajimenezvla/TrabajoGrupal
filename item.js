@@ -3,25 +3,23 @@ let items = [];
 function moveToItemPage(index) {
     localStorage.setItem('item', JSON.stringify(items[index]))
     window.location.href = "item.html";
-}
+}$(document).ready(function () {
 
-$(document).ready(function () {
+    let item = JSON.parse(localStorage.getItem('item'));
+    $('#pictures').attr("src", item.image);
+    $('#name').append(item.name);
+    $('#price').append('<strong>Precio:</strong> $'+item.price);
 
-
-    function getAllProducts() {
+    function getSugeridos() {
         $.ajax({
             type: "Get",
-            url: "http://localhost:3000/api/v1/items",
+            url: "http://localhost:3000/api/v1/sugeridos",
             dataType: "json",
-            success: function (data) {
-                items = data;
+            success: function (sugeridos) {
+                items = sugeridos;
                 let html = '';
-                /**
-                    npm install
-                    npm run development
-
-                 */
-                data.forEach((product, index) => {
+ 
+                sugeridos.forEach((product, index) => {
                     html += '<div class="col mb-4">';
                     html += '<div class="card">';
                     html += '<img src="' + product.image + '" class="card-img-top" alt="..." />';
@@ -31,7 +29,7 @@ $(document).ready(function () {
                     html += '<a href="#"><button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" onclick="moveToItemPage(' + index + ')">Comprar</button></a>';
                     html += ' </div></div> </div>';
                 })
-                $('#products').append(html);
+                $('#sugerido').append(html);
             },
             error: function (error) {
                 alert(error);
@@ -39,5 +37,7 @@ $(document).ready(function () {
         });
     }
 
-    getAllProducts();
-})
+    getSugeridos();
+
+}
+)

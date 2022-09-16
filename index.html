@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="script.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" 
@@ -104,76 +105,8 @@
             </div>
             <div class="col-md-10">
 <!-- Main Container -->          
-                <main class="ListaDeProductos">
-                  <div class="row row-cols-1 row-cols-md-3">
-                      <div class="col mb-4">
-                        <div class="card">
-                          <img src="https://i.ibb.co/Mnfc7X7/pngegg.png" class="card-img-top" alt="..." />
-                          <div class="card-body">
-                            <h5 class="card-title">Gafas Ray-Ban Azules</h5>
-                            <p class="card-text">$20</p>
-                            <a href="#"><button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
-                              Comprar
-                            </button></a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col mb-4">
-                        <div class="card">
-                          <img src="https://i.ibb.co/Mnfc7X7/pngegg.png" class="card-img-top" alt="..." />
-                          <div class="card-body">
-                            <h5 class="card-title">Gafas Ray-Ban Azules</h5>
-                            <p class="card-text">$20</p>
-                            <a href="#"><button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
-                              Comprar
-                            </button></a>
-                          </div>
-                        </div>
-                      </div><div class="col mb-4">
-                        <div class="card">
-                          <img src="https://i.ibb.co/Mnfc7X7/pngegg.png" class="card-img-top" alt="..." />
-                          <div class="card-body">
-                            <h5 class="card-title">Gafas Ray-Ban Azules</h5>
-                            <p class="card-text">$20</p>
-                            <a href="#"><button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
-                              Comprar
-                            </button></a>
-                          </div>
-                        </div>
-                      </div><div class="col mb-4">
-                        <div class="card">
-                          <img src="https://i.ibb.co/Mnfc7X7/pngegg.png" class="card-img-top" alt="..." />
-                          <div class="card-body">
-                            <h5 class="card-title">Gafas Ray-Ban Azules</h5>
-                            <p class="card-text">$20</p>
-                            <a href="#"><button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
-                              Comprar
-                            </button></a>
-                          </div>
-                        </div>
-                      </div><div class="col mb-4">
-                        <div class="card">
-                          <img src="https://i.ibb.co/Mnfc7X7/pngegg.png" class="card-img-top" alt="..." />
-                          <div class="card-body">
-                            <h5 class="card-title">Gafas Ray-Ban Azules</h5>
-                            <p class="card-text">$20</p>
-                            <a href="#"><button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
-                              Comprar
-                            </button></a>
-                          </div>
-                        </div>
-                      </div><div class="col mb-4">
-                        <div class="card">
-                          <img src="https://i.ibb.co/Mnfc7X7/pngegg.png" class="card-img-top" alt="..." />
-                          <div class="card-body">
-                            <h5 class="card-title">Gafas Ray-Ban Azules</h5>
-                            <p class="card-text">$20</p>
-                            <a href="#"><button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
-                              Comprar
-                            </button></a>
-                          </div>
-                        </div>
-                      </div>
+                <main>
+                  <div class="row row-cols-1 row-cols-md-3"  id="products">                  
                   </div>
               </main>
 <!--Pagination-->
