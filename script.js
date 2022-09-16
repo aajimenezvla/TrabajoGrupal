@@ -29,7 +29,7 @@ $(document).ready(function () {
                     html += '<h5 class="card-title">' + product.name + '</h5>';
                     html += '<p class="card-text">$' + product.price + '</p>';
                     html += '<a href="#"><button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" onclick="moveToItemPage(' + index + ')">Comprar</button></a>';
-                    html += ' </div> </div>';
+                    html += ' </div></div> </div>';
                 })
                 $('#products').append(html);
             },
